@@ -1,0 +1,15 @@
+resources:
+  - name: go_gitRepo_demo
+    type: GitRepo
+    configuration:
+      path: eladh/pipeline-simple-demo
+      gitProvider: git
+
+pipelines:
+  - name: service
+    steps:
+      - name: demo_step
+        type: Bash
+        execution:
+          onStart:
+            - ls -lh
