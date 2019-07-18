@@ -15,6 +15,9 @@ pipelines:
             - ls -lh
       - name: demo_step2
         type: Bash
+        configuration:
+          inputSteps:
+            - name: demo_step1
         execution:
           onStart:
             - dir
