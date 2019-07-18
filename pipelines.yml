@@ -8,8 +8,13 @@ resources:
 pipelines:
   - name: service
     steps:
-      - name: demo_step
+      - name: demo_step1
         type: Bash
         execution:
           onStart:
             - ls -lh
+      - name: demo_step2
+        type: Bash
+        execution:
+          onStart:
+            - dir
