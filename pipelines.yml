@@ -2,7 +2,7 @@ resources:
   - name: go_gitRepo_demo
     type: GitRepo
     configuration:
-      path: eladh/pipeline
+      path: danielezer/pipeline
       gitProvider: git
 
 pipelines:
